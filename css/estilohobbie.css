@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #cacaca;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1{
+    font-size: 40px;
+}
+
+/**=============================*/
+/**==========HEADER=============*/
+/**=============================*/
+
+
+.navbar{
+    background: #ffcd48;
+    position: sticky;
+    top: 0;
+}  
+
+.navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    transition: .3s ease-out all;
+}
+
+.navbar a:hover{
+    background: #1d2f3d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+
+
+.contenedor-imagen{
+    height: 100vh;
+}
+
+.contenedor-imagen img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: 0 bottom;
+}
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.volver{
+    
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(1, auto);
+
+    grid-template-areas: "contenido contenido contenido contenido contenido contenido contenido contenido flecha";
+                        
+}
+.flecha{
+    grid-area: flecha;
+    width: 30px;
+    text-align: right;
+    margin: 30%;
+    position: sticky;
+    top: 90%;
+}
+.volver .contenido{
+    grid-area: contenido;
+}
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.menu{
+    
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: "header header header"
+                        "fortnite warzone rocket";
+                        
+}
+
+.menu > div,
+.menu .header,
+.menu .fortnite,
+.menu .warzone,
+.menu .rocket{
+    padding: 20px;
+    border-radius: 4px;
+}
+.menu .header{
+    text-align: center;
+    grid-area: header;
+}
+.menu .fortnite{
+    
+    text-align: center;
+    grid-area: fortnite;
+}
+.menu .warzone{
+    
+    text-align: center;
+    grid-area: warzone;
+}
+.menu .rocket{   
+    
+    text-align: center;
+    grid-area: rocket;
+}
+.menu img{
+    width: 80px;
+}
+
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.info  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "fort "
+                         "wz "
+                         "rl ";
+                        
+}
+
+.info > div,
+.info .fort,
+.info .warz,
+.info .rocketl
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.info .fort{
+    
+    text-align: center;
+    grid-area: fort;
+}
+.info .warz{
+    
+    text-align: center;
+    grid-area: wz;
+}
+.info .rocketl{   
+    
+    text-align: center;
+    grid-area: rl;
+}
+
+
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+ h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+ p{
+    font-family:monospace;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.videos  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header2 header2 "
+                         "vi vi "
+                         "youtube  tiktok"
+                         "t2  t2 ";
+                        
+}
+.videos > div,
+.videos .header2,
+.videos .videoinfo,
+.videos .yi,
+.videos .tk1,
+.videos .videoinfo2
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.videos .header2{
+    text-align: center;
+    grid-area: header2;
+}
+.videos .videoinfo{
+    text-align: center;
+    grid-area: vi;
+}
+.videos .yi{
+    text-align: center;
+    grid-area: youtube;
+}
+.videos .tk1{
+    text-align: center;
+    grid-area: tiktok;
+}
+.videos .videoinfo2{
+    text-align: center;
+    grid-area: t2;
+}
+
+
+.videos img{
+    width:100px;
+}
+/**=============================*/
+/**======CONTENEDOR IMAGEN=======*/
+/**=============================*/
+.peliculas  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: " header3 header3 header3 header3 header3 header3"
+                        "infopelis infopelis infopelis infopelis infopelis infopelis"
+                         "netflix netflix amazon amazon disney disney"
+                         "infopelis2 infopelis2 infopelis2 infopelis2 infopelis2 infopelis2"                         ;
+                        
+}
+.peliculas > div,
+.peliculas .header3,
+.peliculas .infopelis,
+.peliculas .infopelis2,
+.peliculas .netflix,
+.peliculas .amazon,
+.peliculas .disney
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.peliculas .header3{
+    text-align: center;
+    grid-area: header3;
+}
+.peliculas .infopelis{
+    
+    text-align: center;
+    grid-area: infopelis;
+}
+.peliculas .infopelis2{
+    
+    text-align: center;
+    grid-area: infopelis2;
+}
+.peliculas .netflix{   
+    
+    text-align: center;
+    grid-area: netflix;
+}
+.peliculas .amazon{
+    
+    text-align: center;
+    grid-area: amazon;
+}
+.peliculas .disney{   
+    
+    text-align: center;
+    grid-area: disney;
+}
+
+.peliculas img.p,
+
+.juegos-de-mesa img
+{
+    width:100px;
+}
+/**=============================*/
+/**===========Juegos============*/
+/**=============================*/
+.juegos-de-mesa  {
+   
+    width: 90%;
+    max-width: auto ;
+    margin: 30px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "header4 header4 header4"
+                         "infojuegos infojuegos infojuegos";
+                        
+}
+
+.juegos-de-mesa > div,
+.injuegos-de-mesafo .header4,
+.juegos-de-mesa .juegosinfo
+
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.juegos-de-mesa .header4{
+    
+    text-align: center;
+    grid-area: header4;
+}
+.juegos-de-mesa .juegosinfo{
+    
+    text-align: center;
+    grid-area: infojuegos;
+}
+/**=============================*/
+/**===========FOOTER============*/
+/**=============================*/
+
+footer{
+
+    margin: 5px;
+    padding: 20px ;
+    background-color: #a0a0a0;
+    text-align: center;
+}
+h5{
+    color: black;
+    font-size:small;
+}
+
+.list-inline a{
+    display: inline-block;
+}
+
+.footer img{
+    width: 30px;
+}
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+    aside{
+        position: static;
+
+    }
+    
+    .info  {
+   
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+    
+        grid-template-areas: "fort "
+                             "wz"
+                             "rl ";
+                            
+    }
+    h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    }
+    p{
+        font-family:monospace;
+        text-align: justify;
+        font-size: 10px;
+    }
+    .videos  {
+   
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    
+        grid-template-areas: "header2 header2 "
+                             "vi vi "
+                             "youtube  tiktok"
+                             "t2  t2 ";
+                            
+    }
+    
+    .p{
+        width: 50%;
+        height: 50%;
+    }
+    .juegos-de-mesa{        
+        width: 90%;
+        max-width: auto ;
+        margin: 30px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    
+        grid-template-areas: "header4 "
+                            "juegosinfo "
+                             
+    }
+.juegos-de-mesa > div,
+.injuegos-de-mesafo .header4,
+.juegos-de-mesa .juegosinfo
+
+{
+    padding: 20px;
+    border-radius: 4px;
+}
+.juegos-de-mesa .header4{
+    
+    text-align: center;
+    grid-area: header4;
+}
+.juegos-de-mesa .juegosinfo{
+    
+    text-align: center;
+    grid-area: juegosinfo;
+}
+ img.r{
+    width: 225px;
+}
+    .p {
+        width: fit-content;
+        
+    }
+    
+
+} 
